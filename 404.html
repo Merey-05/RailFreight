@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RailFreight AI Kazakhstan</title>
+    <script>
+      // Redirect SPA 404s to the index page with the path as a query param
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/RailFreight/?' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/') +
+        (l.search ? '&' + l.search.slice(1) : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
