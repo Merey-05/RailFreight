@@ -3,9 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RailFreight AI Kazakhstan — ИИ-прогнозирование грузоперевозок</title>
-    <script type="module" crossorigin src="../assets/index-yXqiPXv-.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/index-C78M_MH3.css">
+    <title>RailFreight AI Kazakhstan</title>
+    <script>
+      (function() {
+        var search = window.location.search;
+        if (search) {
+          var path = search.slice(1);
+          if (path) {
+            history.replaceState(null, null,
+              window.location.pathname + path + window.location.hash
+            );
+          }
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/RailFreight/assets/index-yXqiPXv-.js"></script>
+    <link rel="stylesheet" crossorigin href="/RailFreight/assets/index-C78M_MH3.css">
   </head>
   <body>
     <div id="root"></div>
